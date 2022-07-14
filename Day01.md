@@ -1,1 +1,3 @@
-#Today I learned
+# Today I learned
+
+## Why git and github?
