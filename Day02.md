@@ -24,7 +24,7 @@
     * .gitignore가 생성되기 이전에 git으로 버전 관리가 되고 있던 파일들은(git add를 해놓은 파일들) .gitignore에 의해 무시당하지 않고 계속 버전관리가 이루어진다.
     * 그러므로 모든 프로젝트에서 가장 먼저 READ.md와 함께 만들어야 한다.
 
-    + 이것을 도와주기 위해 [gitignore.io](https://www.toptal.com/developers/gitignore/) 에서 .gitignore 파일을 생성해준다.
+    + 이것을 도와주기 위해 [gitignore.io](https://www.toptal.com/developers/gitignore/) 에서 .gitignore 내용을 생성해준다.
 
 3. Clone & Pull
     - clone
