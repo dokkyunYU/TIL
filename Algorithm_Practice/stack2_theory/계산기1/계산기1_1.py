@@ -25,4 +25,4 @@ for test_count in range(1, int(input()) + 1):
             number_stack.append(int(i))
         # print(number_stack)
     # 연산이 올바르게 종료되었다면, 스택 안에는 계산이 완료된 하나의 값만 남아있어야하므로 그냥 출력할 수 있다.
-    print(f"# {test_count}", *number_stack)
+    print(f"#{test_count}", *number_stack)
