@@ -6,6 +6,7 @@ import sys
 
 sys.stdin = open("input.txt")
 
+
 def well_known(start: int):
     if already_known[start]:
         return 0
@@ -28,7 +29,7 @@ def well_known(start: int):
 
 t = int(input())
 
-for test_count in range(1, t+1):
+for test_count in range(1, t + 1):
     people_number, line_number = map(int, input().split())
     people_list = [[] for _ in range(people_number + 1)]
     already_known = [False for _ in range(people_number + 1)]

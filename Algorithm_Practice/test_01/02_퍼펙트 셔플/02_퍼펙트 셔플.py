@@ -8,11 +8,11 @@ sys.stdin = open("input.txt")
 
 t = int(input())
 
-for test_count in range(1,t+1):
+for test_count in range(1, t + 1):
     n = int(input())
     card_list = list(input().split())
-    first_card_list = card_list[:(n+1)//2]
-    second_card_list = card_list[(n+1)//2:]
+    first_card_list = card_list[: (n + 1) // 2]
+    second_card_list = card_list[(n + 1) // 2 :]
     result_card_list = []
     while second_card_list:
         result_card_list.append(first_card_list.pop(0))

@@ -8,18 +8,18 @@ sys.stdin = open("input.txt")
 
 t = int(input())
 
-for test_count in range(1,t+1):
+for test_count in range(1, t + 1):
     n = int(input())
     input_string: str = input().split()
-    name_count = [0]*n
+    name_count = [0] * n
     idx = 0
     is_end = False
     text = ""
     for j in input_string:
         if j[-1] in [".", "?", "!"]:
-            text = j[:len(j)-1]
+            text = j[: len(j) - 1]
             is_end = True
-        else :
+        else:
             text = j
         if text[0].isupper():
             for k in range(1, len(text)):
