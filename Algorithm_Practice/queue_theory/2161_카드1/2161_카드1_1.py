@@ -4,7 +4,6 @@ result_list = []
 while len(n_card_queue) > 1:
     result_list.append(n_card_queue.pop(0))
     if len(n_card_queue) <= 1:
-        result_list.append(n_card_queue.pop())
         break
     n_card_queue.append(n_card_queue.pop(0))
-print(*result_list)
+print(*result_list, *n_card_queue)
