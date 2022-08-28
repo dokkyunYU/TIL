@@ -1,3 +1,5 @@
+# 빙고
+# https://www.acmicpc.net/problem/2578
 # 1424 1713
 
 import sys
@@ -10,7 +12,7 @@ call_list = []
 for _ in range(5):
     call_list += list(map(int, input().split()))
 # 각 숫자의 좌표값을 저장하는 리스트
-coordinate_list = [0]*26
+coordinate_list = [0] * 26
 # 각 좌표값이 몇개 나왔는지 세는 리스트
 x_idx_count = [0] * 5
 y_idx_count = [0] * 5
