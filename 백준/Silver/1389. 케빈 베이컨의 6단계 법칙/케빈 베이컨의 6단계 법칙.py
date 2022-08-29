@@ -7,9 +7,6 @@ for _ in range(relation_number):
     people_relations_list[person1].append(person2)
     people_relations_list[person2].append(person1)
 
-for p in range(1, people_number + 1):
-    people_relations_list[p] = list(set(people_relations_list[p]))
-
 min_value = 10 ** 6
 min_person = 0
 for someone in range(1, people_number + 1):
