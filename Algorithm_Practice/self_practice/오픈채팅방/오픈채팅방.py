@@ -1,3 +1,6 @@
+# 42888. 오픈채팅방
+
+
 def solution(record):
     answer = []
     people = {}
@@ -6,6 +9,7 @@ def solution(record):
         person_action = i.split()  # person_action = ["Enter", "uid1234", "Muzi"]
         if len(person_action) == 3:  # Enter 혹은 Change라서 길이가 3이라면
             people.update({person_action[1]: person_action[2]})  # {유저 아이디 : 닉네임}으로 딕셔너리 추가
+            # people[person_action[1]] = person_action[2]  # 딕셔너리에는 그냥 대입연산자로 대입해도 업데이트 가능
         if person_action[0] == "Enter":  # Enter라면 "유저아이디 + 님이 들어왔습니다.""
             answer.append(f"{person_action[1]}님이 들어왔습니다.")
         elif person_action[0] == "Leave":  # Leave라면 "유저아이디 + 님이 나갔습니다."
