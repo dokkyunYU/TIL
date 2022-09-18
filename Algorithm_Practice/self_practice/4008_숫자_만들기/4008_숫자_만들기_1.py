@@ -11,3 +11,4 @@ for test_count in range(1, int(input()) + 1):
     print(the_numbers)
     # 2 1 6 2
     # 2 3 7 9 4 5 1 9 2 5 6 4
+    # 중복순열을 어떻게 구현해야하나...
