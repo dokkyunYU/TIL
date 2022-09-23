@@ -13,7 +13,6 @@ def diagonal_move(row, col, move_dir=0, move_count=0, depth=1):
         return
     if row - 1 == row_now and col + 1 == col_now:
         answer_set.add(len(dessert_set))
-        # print(depth)
         dessert_set.discard(area_dessert_list[row][col])
         return
     if move_dir < 1:
@@ -34,6 +33,5 @@ for test_count in range(1, int(input()) + 1):
     answer_set = set()
     for row_now in range(area_size):
         for col_now in range(area_size):
-            # print("start")
             diagonal_move(row_now, col_now)
     print("#{} {}".format(test_count, max(answer_set) if answer_set else -1))
