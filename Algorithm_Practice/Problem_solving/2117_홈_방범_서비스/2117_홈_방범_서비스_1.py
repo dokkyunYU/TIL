@@ -3,7 +3,9 @@
 # 1142 1222
 
 import sys
+
 sys.stdin = open("sample_input.txt")
+
 
 def dist_mapping(x, y):
     for a in range(city_size):
@@ -27,6 +29,6 @@ for test_count in range(1, int(input()) + 1):
                 for each_dist in house_dist_list[n][m]:
                     if each_dist <= dist:
                         house_count += 1
-                if house_count * fee >= (dist+1)**2 + dist**2:
+                if house_count * fee >= (dist + 1) ** 2 + dist ** 2:
                     house_count_list.append(house_count)
     print("#{} {}".format(test_count, max(house_count_list)))
