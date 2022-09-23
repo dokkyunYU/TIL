@@ -1,6 +1,6 @@
 # 디저트 카페
 # https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5VwAr6APYDFAWu
-# 1331
+# 1331 1543
 
 import sys
 sys.stdin = open("sample_input.txt")
