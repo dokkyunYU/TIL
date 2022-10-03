@@ -1,3 +1,7 @@
+import sys
+
+sys.stdin = open("input.txt")
+
 for test_count in range(1, int(input()) + 1):
     start_num, target_num = map(int, input().split())
     calcul_count = 0
